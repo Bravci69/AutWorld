@@ -1,3 +1,4 @@
+<h1>
 <?php
 // Use microtime() function to measure
 // starting time
@@ -36,3 +37,4 @@ $current_time= time();
 $rozdiel=$time_start-$current_time;
 echo $rozdiel;
 ?>
+</h1>
