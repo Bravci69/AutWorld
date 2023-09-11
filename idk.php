@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
+    <head>
+
+    </head>
+    <body>
+        
+    
+    </body>
 <h1>
 <?php
 // Use microtime() function to measure
 // starting time
-echo("casovac zacal");
+echo("casovac zacal");?></h1>
+<?php
+
 $time_start = microtime(true);
   
 // Code of program
@@ -39,6 +48,6 @@ $current_time= time();
 $rozdiel=$time_start-$current_time;
 echo $rozdiel;
 ?>
-</h1>
+
 
 </html>
