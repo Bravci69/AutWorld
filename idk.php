@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <h1>
 <?php
 // Use microtime() function to measure
@@ -38,3 +40,5 @@ $rozdiel=$time_start-$current_time;
 echo $rozdiel;
 ?>
 </h1>
+
+</html>
