@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sk" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="pictures/AutWorld_Logo.webp" sizes="16x16">
+    <title>FAQ</title>
+    
+   
+
+</head>
+<body onload="sliderko()">
+
+    <!-- header -->
+    <div class="header">
+        
+        <a href="index.html" class="logo">
+            <img src="pictures/AutWorld_Logo.webp" alt="logo" class="rozmerL">
+        </a>
+        
+        <a href="index.html">
+            <div class="textH">HOME</div>
+        </a>
+        <a href="about_us.html">
+            <div class="textH">ABOUT US</div>
+        </a>
+        <a href="faq.html" class="on_page">
+            <div class="textH">FAQ</div>
+        </a>
+        <a href="galery.html">
+            <div class="textH">GALERY</div>
+        </a>       
+        
+    </div>
+    <div class="header1"></div>
+
+    
+    <!-- body -->
+    <div class="body">
+        <div class="textB">FAQ</div>
+        <div class="bodys" id="bodys1"></div>
+    </div>
+
+    <script src="first_script.js"></script>
+
+    <div class="banner">
+        <div class="slideros">
+            <img id="slider_img_center" src="pictures/anime-anime-girls-blonde-braids-wallpaper-preview.png" alt="">
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <script>
+        var slider_img_center = document.getElementById("slider_img_center");
+        var image = new Array(
+            "pictures/anime-anime-girls-blonde-braids-wallpaper-preview.png",
+            "pictures/unknown_0.png",
+            "pictures/unknown_1.png",
+            "pictures/unknown_2.png"
+        );
+
+        var len = image.length;
+        var i=0;
+        function sliderko(){
+
+        if(i>len-1){
+            i=0;
+        }
+        slider_img_center.src=image[i];
+        i++;
+        setTimeout('sliderko()',10000)
+}
+
+    </script>
+
+    
+
+    <!-- footer -->
+    <div class="line"></div>
+    <footer class="footer">
+        <div class="footerL">
+            <div class="textF">idc1</div>
+            <div class="textF">idc2</div>
+            <div class="textF">idc3</div>
+            
+        </div>
+        <div class="footerC">
+            <div class="textF">idc4</div>
+            <div class="textF">idc5</div>
+            <div class="textF">idc6</div>
+        </div>
+        <div class="footerR">
+            <div class="textF">idc7</div>
+            <div class="textF">idc8</div>
+            <div class="textF">idc9</div>
+        </div>
+        
+    </footer>
+</body>
+</html>
