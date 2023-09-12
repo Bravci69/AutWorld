@@ -11,8 +11,10 @@
 <?php
 // Use microtime() function to measure
 // starting time
-echo("casovac zacal");?></h1>
-<?php
+
+echo("casovac zacal"); 
+ echo("</h1>");
+
 
 $time_start = microtime(true);
   
@@ -47,7 +49,7 @@ time_nanosleep(60,0);
 $current_time= time();
 $rozdiel=$time_start-$current_time;
 echo $rozdiel;
-?>
 
+?>
 
 </html>
